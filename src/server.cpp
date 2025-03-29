@@ -14,6 +14,7 @@ void Server::run()
 {
     cout<<"Server running on http://"<<acceptor_.local_endpoint().address().to_string() // 서버 주소 출력
         <<":"<<acceptor_.local_endpoint().port()<<endl; // 포트 번호 출력
+    io_context_.run(); // 이벤트 시작
 }
 
 void Server::do_accept()
@@ -38,7 +39,7 @@ void Server::handle_request(boost::asio::ip::tcp::socket socket)
     string response = 
         "HTTP/1.1 200 OK\r\n"
         "Content-Type: text/html; charset=UTF-8\r\n" // Content-Type을 HTML로 설정
-        "Content-Length: 23\r\n"
+        "Content-Length: 46\r\n"
         "\r\n"
         "<html><body><h1>Hello, World!</h1></body></html>";  // HTML로 "Hello, World!" 메시지 반환
     
