@@ -1,4 +1,4 @@
-#include "server.h";
+#include "server.h"
 #include <iostream>
 #include <string>
 
@@ -17,12 +17,14 @@ void Server::run()
 }
 
 void Server::do_accept()
-{
+{   
+    cout << "Waiting for connection..." << endl;  // 디버그 메시지
     acceptor_.async_accept(
         [this](boost::system::error_code ec,boost::asio::ip::tcp::socket socket) // 새로운 소켓을 생성
         {
             if(!ec) // 오류가 없으면
             {
+                cout << "Connection accepted" << endl;  // 연결 수락시 메시지
                 handle_request(move(socket)); // 소켓 처리함수 호출
             }
 
@@ -32,7 +34,13 @@ void Server::do_accept()
 
 void Server::handle_request(boost::asio::ip::tcp::socket socket)
 {
-    //임시 코드
-    string response ="HTTP/1.1 200 OK\r\nContent-Length: 13\r\n\r\nHello, World!";
-    boost::asio::write(socket, boost::asio::buffer(response)); // 소켓을 통해 클라이언트에게 응답함
+    // HTML 형식으로 응답을 생성
+    string response = 
+        "HTTP/1.1 200 OK\r\n"
+        "Content-Type: text/html; charset=UTF-8\r\n" // Content-Type을 HTML로 설정
+        "Content-Length: 23\r\n"
+        "\r\n"
+        "<html><body><h1>Hello, World!</h1></body></html>";  // HTML로 "Hello, World!" 메시지 반환
+    
+    boost::asio::write(socket, boost::asio::buffer(response));  // 소켓을 통해 클라이언트에게 응답
 }
