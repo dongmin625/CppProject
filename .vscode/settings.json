@@ -55,6 +55,11 @@
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
     "memory": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "*.tcc": "cpp",
+    "format": "cpp",
+    "istream": "cpp",
+    "stacktrace": "cpp",
+    "thread": "cpp"
   }
 }

@@ -101,21 +101,55 @@ CMakeFiles/http_server.dir/src/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/server.cpp.s"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\focus\source\repos\CppProject\src\server.cpp -o CMakeFiles\http_server.dir\src\server.cpp.s
 
+CMakeFiles/http_server.dir/src/http_request.cpp.obj: CMakeFiles/http_server.dir/flags.make
+CMakeFiles/http_server.dir/src/http_request.cpp.obj: CMakeFiles/http_server.dir/includes_CXX.rsp
+CMakeFiles/http_server.dir/src/http_request.cpp.obj: C:/Users/focus/source/repos/CppProject/src/http_request.cpp
+CMakeFiles/http_server.dir/src/http_request.cpp.obj: CMakeFiles/http_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\focus\source\repos\CppProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/http_server.dir/src/http_request.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/http_request.cpp.obj -MF CMakeFiles\http_server.dir\src\http_request.cpp.obj.d -o CMakeFiles\http_server.dir\src\http_request.cpp.obj -c C:\Users\focus\source\repos\CppProject\src\http_request.cpp
+
+CMakeFiles/http_server.dir/src/http_request.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/http_server.dir/src/http_request.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\focus\source\repos\CppProject\src\http_request.cpp > CMakeFiles\http_server.dir\src\http_request.cpp.i
+
+CMakeFiles/http_server.dir/src/http_request.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/http_request.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\focus\source\repos\CppProject\src\http_request.cpp -o CMakeFiles\http_server.dir\src\http_request.cpp.s
+
+CMakeFiles/http_server.dir/src/http_response.cpp.obj: CMakeFiles/http_server.dir/flags.make
+CMakeFiles/http_server.dir/src/http_response.cpp.obj: CMakeFiles/http_server.dir/includes_CXX.rsp
+CMakeFiles/http_server.dir/src/http_response.cpp.obj: C:/Users/focus/source/repos/CppProject/src/http_response.cpp
+CMakeFiles/http_server.dir/src/http_response.cpp.obj: CMakeFiles/http_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\focus\source\repos\CppProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/http_server.dir/src/http_response.cpp.obj"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/http_server.dir/src/http_response.cpp.obj -MF CMakeFiles\http_server.dir\src\http_response.cpp.obj.d -o CMakeFiles\http_server.dir\src\http_response.cpp.obj -c C:\Users\focus\source\repos\CppProject\src\http_response.cpp
+
+CMakeFiles/http_server.dir/src/http_response.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/http_server.dir/src/http_response.cpp.i"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\focus\source\repos\CppProject\src\http_response.cpp > CMakeFiles\http_server.dir\src\http_response.cpp.i
+
+CMakeFiles/http_server.dir/src/http_response.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/http_server.dir/src/http_response.cpp.s"
+	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\focus\source\repos\CppProject\src\http_response.cpp -o CMakeFiles\http_server.dir\src\http_response.cpp.s
+
 # Object files for target http_server
 http_server_OBJECTS = \
 "CMakeFiles/http_server.dir/src/main.cpp.obj" \
-"CMakeFiles/http_server.dir/src/server.cpp.obj"
+"CMakeFiles/http_server.dir/src/server.cpp.obj" \
+"CMakeFiles/http_server.dir/src/http_request.cpp.obj" \
+"CMakeFiles/http_server.dir/src/http_response.cpp.obj"
 
 # External object files for target http_server
 http_server_EXTERNAL_OBJECTS =
 
 http_server.exe: CMakeFiles/http_server.dir/src/main.cpp.obj
 http_server.exe: CMakeFiles/http_server.dir/src/server.cpp.obj
+http_server.exe: CMakeFiles/http_server.dir/src/http_request.cpp.obj
+http_server.exe: CMakeFiles/http_server.dir/src/http_response.cpp.obj
 http_server.exe: CMakeFiles/http_server.dir/build.make
 http_server.exe: CMakeFiles/http_server.dir/linkLibs.rsp
 http_server.exe: CMakeFiles/http_server.dir/objects1.rsp
 http_server.exe: CMakeFiles/http_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\focus\source\repos\CppProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable http_server.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\focus\source\repos\CppProject\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable http_server.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\http_server.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

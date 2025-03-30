@@ -1,4 +1,4 @@
-#ifndef HTTP_REQUSET_H
+#ifndef HTTP_REQUEST_H
 #define HTTP_REQUEST_H
 
 #include <string>

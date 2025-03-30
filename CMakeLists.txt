@@ -10,7 +10,7 @@ find_package(Boost CONFIG REQUIRED)
 include_directories(${Boost_INCLUDE_DIRS} ${CMAKE_SOURCE_DIR}/include)
 
 # 실행 파일 추가
-add_executable(http_server src/main.cpp src/server.cpp)
+add_executable(http_server src/main.cpp src/server.cpp src/http_request.cpp src/http_response.cpp)
 
 # Boost 라이브러리 링크
 target_link_libraries(http_server ${Boost_LIBRARIES})

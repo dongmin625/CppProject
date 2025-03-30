@@ -21,10 +21,10 @@ void HttpResponse::set_body(const string& body){
 
 string HttpResponse::to_string() const{
     ostringstream response;
-    response << "HTTP/1.1" << status_code_ << " " << status_message_ << "\r\n";
+    response << "HTTP/1.1 "<< status_code_ << " " << status_message_ << "\r\n";
 
     for (const auto& header : headers_){
-        response << header.first << ":" << header.second << "\r\n";
+        response << header.first << ": " << header.second << "\r\n";
     }
 
     response << "\r\n" << body_;

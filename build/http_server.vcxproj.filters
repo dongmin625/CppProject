@@ -7,6 +7,12 @@
     <ClCompile Include="C:\Users\focus\source\repos\CppProject\src\server.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\focus\source\repos\CppProject\src\http_request.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\focus\source\repos\CppProject\src\http_response.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\focus\source\repos\CppProject\CMakeLists.txt" />

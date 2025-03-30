@@ -1379,4 +1379,10 @@ CMakeFiles/http_server.dir/src/server.cpp.obj: \
  C:/Users/focus/anaconda3/Library/include/boost/asio/writable_pipe.hpp \
  C:/Users/focus/anaconda3/Library/include/boost/asio/write_at.hpp \
  C:/Users/focus/anaconda3/Library/include/boost/asio/impl/write_at.hpp \
+ C:/Users/focus/source/repos/CppProject/include/http_request.h \
+ C:/msys64/mingw64/include/c++/14.2.0/map \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_tree.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_map.h \
+ C:/msys64/mingw64/include/c++/14.2.0/bits/stl_multimap.h \
+ C:/Users/focus/source/repos/CppProject/include/http_response.h \
  C:/msys64/mingw64/include/c++/14.2.0/iostream
