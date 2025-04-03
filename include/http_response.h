@@ -9,7 +9,7 @@ class HttpResponse{
     private:
         int status_code_ =200;
         std::string status_message_ ="OK";
-        map<std::string,std::string> headers_;
+        std::map<std::string,std::string> headers_;
         std::string body_;
     
     public:
