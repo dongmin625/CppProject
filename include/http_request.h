@@ -4,18 +4,18 @@
 #include <string>
 #include <map>
 
-using namespace std;
+// using namespace std;  헤더파일에서 이거 쓰면 안됨
 
 class HttpRequest {
     public:
         HttpRequest() = default; 
-        void parse(const string& raw_request);
+        void parse(const std::string& raw_request);
 
-        string method;
-        string uri;
-        string http_version;
-        map<string,string> headers;
-        string body;
+        std::string method;
+        std::string uri;
+        std::string http_version;
+        std::map<std::string,std::string> headers;
+        std::string body;
 
 };
 
